@@ -7,6 +7,15 @@ Dwa widoki karty produktu:
     W związku z tym, że karta produktu na froncie sklepu wymaga zmian w produkcie w panelu sklepu, wdrożylismy dwa jej widoki. Pierwszy widok jest widokiem domyślnym dla nowych szablonów i wyświetla się domyślnie dla każdego produktu.
     Drugi widok uruchamia się w momencie, gdy do produktu dodany jest którykolwiek z tagów opisanych poniżej.
     
+Aby karta produktu NIE ULEGLA ZMIANOM w aktywnym szablonie, należy:
+* Przed przystąpieniem do pracy nad produktem dodać do niego tag "new"
+* Przekopiować zawartość pola "krótki opis produktu" na samą górę opisu produktu
+* Po treści krótkiego opisu wstawić słowo klucz ``_divide``
+* po treści opisu głównego dla STAREGO szablonu wstawić słowo klucz ``_separator``
+* Treści zgodne z instrukcją poniżej wypełniać po kluczu ``_separator``
+
+    
+    
 ### OPIS PRODUKTU
 
 Treść w sekcjach 1, 3 i 5 edytujemy za pomocą edycji opisu produktu. Opis podzielony jest za pomocą klucza ``_divide`` - czyli tam, gdzie kończy się treść danej sekcji opisu a zaczyna następna wstawiamy słowo klucz ``_divide``, przykładowo:
@@ -634,8 +643,7 @@ Aby na liscie produktów po najechaniu pojawiała się lista, w **KRÓTKIM OPISI
 <li>Bomba składników bioaktywnych</li>
 <li>Naturalne wsparcie przy alergii</li>
 </ul>
-<a href="{$p->url}">zobacz</a>
-</div>
+<a href="{$p->url}">zobacz</a></div>
 ```
 Zmieniamy tylko treść w znacznikach ``li``
 
