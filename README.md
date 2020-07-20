@@ -1,6 +1,6 @@
 ## Olini instrukcja do karty produktu nowego szablonu.
 
-Z wyjątkiem karty produktu większości zmian dokonujemy za pomocą opcji Personalizuj dostępnej w zakładce Wygląd Sklepu.
+Z wyjątkiem karty produktu oraz dropdown menu większości zmian dokonujemy za pomocą opcji Personalizuj dostępnej w zakładce Wygląd Sklepu.
 Wszystkie treści przedstawione w poniższej instrukcji są treściami przykładowymi.
 
 Dwa widoki karty produktu:
@@ -63,6 +63,14 @@ wszystkie dane na 100 g
 ```
 Gdzie edytujemy tylko tekst pomiędzy znacznikami, a znaczniki powinny zostać nienaruszone. Wypełniony kod wklejamy w zawartość strony własnej, używając edytora HTML stron własnych, dostępnego po kliknięciu następującego przycisku:
 ![](https://i.imgur.com/dfIC1Rx.png)
+
+W przypadku tej templatki edytujemy tylko poniższe bloki:
+```html
+            <p class="custom-prop-value">83,93g</p>
+            <p class="custom-prop-description">kwasy tłuszczowe nienasycone</p>
+```
+Czyli podmieniamy tekst pomiędzy znacznikami oznaczonymi klasą ``"custom-prop-value"`` lub ``"custom-prop-description"``
+            
 
 ### SEKCJA 3
 Poruszona w pierwszej części intrukcji (OPIS PRODUKTU)
@@ -221,7 +229,48 @@ Analogicznie, jak w przypadku Sekcji 2, i w tym przypadku musimy:
     </div>
     </div>
 ```    
+
 Analogicznie jak w przypadku poprzedniej strony, edytujemy jedynie tekst pomiędzy znacznikami a następnie wklejamy za pomocą edytora HTML stron własnych w kod strony własnej.
+
+#### Nagłówek sekcji
+```html
+<h3>Składniki</h3>
+<p>100% olej z nasion czarnuszki siewnej tłoczony na zimno</p>
+```
+W znacnziku ``h3``powinien znaleźć się tytuł główny sekcji, w znaczniku ``p`` umieszczamy podtytuł.
+##### Sekcja "warto wiedzieć"
+Analogicznie jak wyżej, tytuł sekcji umieszczamy pomiędzy znacznikami ``h3``:
+```html
+<h3>Warto wiedzieć</h3>
+```
+Kolejne elementy sekcji są blokami:
+```html
+<div class="ingredients-list-element">
+    <figure><img src="https://cdn.shoplo.com/5432/s/54/assets/polska-icon-01.svg?6292" data-image="y5mfn2mawc3e"></figure>
+    <div class="ingredients-content-wrapper">
+        <span class="ing-header">
+            Kraj pochodzenia:
+        </span>
+        <span class="ing-content">
+            Polska
+        </span>
+    </div>
+</div>
+```
+Podmieniamy tekst w znaczniku o klasie ``"ing-header"`` - tu umieszczamy "nagłówek elementu", oraz podmieniamy tekst w znaczniku o klasie ``"ing-content"`` - tu umieszczamy "treść elementu"
+
+Powtarzamy dla każdego kolejnego elementu.
+
+#### Tabela rozmiarów
+Tabela rozmiarów również skłąda się z powtarzalnych bloków, w których wypełniamy odpowiednie wartości:
+```html
+    <div class="nutri-vals-row">
+        <span class="nutri-right">Wartość energetyczna</span><span class="nutri-left">3700 kJ  / 900 kcal</span>
+    </div>
+```
+
+W znacznikach oznaczonych klasą ``"nutri-right"`` umieszczamy to co ma się znaleźć w prawej kolumnie, natomiast w znacznikach oznaczonych klasą ``"nutri-left"`` to co ma się znaleźć w lewej kolumnie.
+Wiersz można powtórzyć dowolną ilość razy.
 
 ### SEKCJA 5
 Poruszona w pierwszej części instrukcji (OPIS PRODUKTU)
@@ -311,6 +360,35 @@ się tym co najlepsze z naszymi klientami:
 </div>
 ```
 Analogicznie jak w przypadku poprzedniej strony, edytujemy jedynie tekst pomiędzy znacznikami a następnie wklejamy za pomocą edytora HTML stron własnych w kod strony własnej.
+
+#### Naglówek sekcji
+Nagłówek sekcji uzupełniamy w poniższym fragmencie kodu:
+```html
+<h3 class="column is-8 is-offset-2 why-header">
+Dlaczego warto sięgnąć po olej z czarnuszki Olini?
+</h3>
+<span class="column is-8 is-offset-2">
+W naszej rodzinnej olejarni tłoczymy jedynie najlepszej jakości olej z czarnuszki.
+Jeszcze niedawno tłoczyliśmy go jedynie dla siebie i naszych bliskich, teraz chcemy dzielić
+się tym co najlepsze z naszymi klientami:
+</span>
+```
+#### Treść w sekcji
+Sekcja, podobnie jak poprzednia, sklada się z niemal identycznych bloków:
+```html
+<div class="why-section-wrapper">
+		<div class="why-icon ol-icon-parcel-hands" style="color:#ffcba5;"></div>
+		<div class="why-texts">
+			<span class="why-text-header">
+				Bezpieczny transport
+			</span>
+			<span class="why-text">
+				Nasze oleje wysyłamy do Was w ciemnych butelkach z grubego szkła (w trosce o wrażliwe kwasy tłuszczowe), a dodatkowo na czas transportu pakujemy je w styropianowe termosy. Zapewnia to ochronę przed światłem słonecznym i temperaturą.
+			</span>
+		</div>
+</div>
+```
+Wypełniamy tutaj text w znaczniku o klasie ``"why-text-header"`` - nagłówek elementu sekcji oraz w znaczniku o klasie ``"why-text"`` - treść elementu sekcji.
     
 ### SEKCJA 8
 Analogicznie jak w przypadku sekcji 4, aby sekcja była widoczna, należy:
@@ -325,7 +403,7 @@ Analogicznie jak w przypadku sekcji 4, aby sekcja była widoczna, należy:
 </div>
 <div class="columns experts-wrapper">
 	<div class="column is-narrow-desktop is-narrow-tablet  is-12-mobile is-paddingless">
-		<figure><img src="//cdn.shoplo.com/3585/files/pantabletka.png" data-image="774azihjg2wm"></figure>
+		<figure><img src="//cdn.shoplo.com/3585/files/pantabletka.png" ></figure>
 	</div>
 	<div class="column expert-review-wrapper">
 <div class="expert-triangle"></div>
@@ -339,7 +417,7 @@ Analogicznie jak w przypadku sekcji 4, aby sekcja była widoczna, należy:
 </div>
 <div class="columns experts-wrapper">
 	<div class="column is-narrow-desktop is-narrow-tablet  is-12-mobile is-paddingless">
-		<figure><img src="https://cdn.shoplo.com/3585/files/aaaaa.png" data-image="x6m9pvj2c1rt"></figure>
+		<figure><img src="https://cdn.shoplo.com/3585/files/aaaaa.png" ></figure>
 	</div>
 	<div class="column expert-review-wrapper">
 		<span class="experts-review">"Przygotujcie się na jesień! Nasz sekretny plan odpornościowy: olej z czarnuszki Olini + miód. Zaczynamy znów go pić, by dzieci chorowały jak najmniej i łagodnie przechodziły infekcje. Czy to naprawdę działa? TAK! <br>
@@ -351,8 +429,30 @@ Analogicznie jak w przypadku sekcji 4, aby sekcja była widoczna, należy:
 	</div>
 </div>
 ```
-Analogicznie jak w przypadku każdej innej takiej strony, edytujemy jedynie tekst pomiędzy znacznikami a następnie wklejamy za pomocą edytora HTML stron własnych w kod strony własnej. Jedyną różnicą tutaj jest to, że musimy również wkleić bezpośrednie odnośniki do zdjęć dla każdej opinii. O tym więcej niżej.
+Analogicznie jak w przypadku każdej innej takiej strony, edytujemy jedynie tekst pomiędzy znacznikami a następnie wklejamy za pomocą edytora HTML stron własnych w kod strony własnej. Jedyną różnicą tutaj jest to, że musimy również wkleić bezpośrednie odnośniki do zdjęć dla każdej opinii. 
 
+Sekcja ta składa się z bloków, dla każdej opinii:
+
+```html
+<div class="columns experts-wrapper">
+    <div class="column is-narrow-desktop is-narrow-tablet  is-12-mobile is-paddingless">
+        <figure><img src="//cdn.shoplo.com/3585/files/pantabletka.png"></figure>
+    </div>
+    <div class="column expert-review-wrapper">
+        <div class="expert-triangle"></div>
+            <span class="experts-review">"Możemy powiedzieć, że czarnuszka to dosłownie bomba składników bioaktywnych. A odpowiedniej jakości olej z czarnuszki to esencja z esencji. Prozdrowotny dynamit. <br>
+                O czarnuszce mówimy, że posiada właściwości immunomodulujące. Oznacza to, że wpływa na działanie układu odpornościowego. Immunomodulacja to działanie dużo bardziej subtelne niż samo „stymulowanie odporności”. Związki bioaktywne, które ukryte są w czarnuszce (głównie ten tymochinon) – z jednej strony mają zdolność do mobilizowania układu odpornościowego, czyli czasowo podnoszą ilość komórek „wojowników” układu odpornościowego, a z drugiej działają przeciwzapalnie i łagodząco w stanach, kiedy układ odpornościowy działa „za bardzo”, czyli w różnego rodzaju chorobach alergicznych (np.: alergiczny nieżyt nosa), atopowym zapaleniu skóry i reumatoidalnym zapaleniu stawów."
+            </span>
+            <span class="experts-author">
+                Pan Tabletka, <a href="http://pantabletka.pl"> http://pantabletka.pl</a>
+            </span>
+        </div>
+    </div>
+```
+Tu wklejamy odpowiednie:
+* Link do obrazu w atrybucie src do znacznika img: ``<img src="//linkdoobrazkadlaopinii.png">`` 
+* Treść opinii eksperta w znaczniku z klasa ``"experts-review"``
+* W znaczniku o klasie ``"experts-author"`` wypełniamy informacje o autorze opinii, jego nazwę oraz adres url (W znaczniku A podmieniamy adres url, odpowiednio w dwóch miejscach)
 
 ### SEKCJA 9 
 Analogicznie jak w przypadku sekcji 4, aby sekcja była widoczna, należy:
@@ -416,6 +516,21 @@ Najczęściej zadawane pytania
 ```
 
 Analogicznie jak w przypadku każdej innej takiej strony, edytujemy jedynie tekst pomiędzy znacznikami a następnie wklejamy za pomocą edytora HTML stron własnych w kod strony własnej.
+Podobnie jak w przypadku porpzednich sekcji są tu powtarzalne bloki, w których wypełniamy tylko treść w miejsce tej przykładowej:
+```html
+<div class="custom-faq-block">
+    <div class="custom-faq-header">
+        <h3 class="custom-faq-question"> Czy olej z czarnuszki można pić w ciąży?</h3> 
+        <div class="faq-buttons"><span class="faq-hidden faq-button">+</span><span class="faq-visible faq-button">-</span></div>
+    </div>
+    <div class="custom-faq-collapsabe-answer">
+                    Olej z czarnuszki jest sklasyfikowany jako bezpieczny olej spożywczy, nie środek leczniczy, więc nie ma działań niepożądanych. Pojawiają się jednak również opinie, że czarnuszka nie jest zalecana w ciąży, bo może wywołać przedwczesne skurcze.
+                    W dużych ilościach i jako nowość w diecie, olej z czarnuszki w ciąży może nie być najlepszym pomysłem, ale jeśli jest obecny w naszej kuchni na co dzień to w ciąży nie trzeba z niego rezygnować.
+                    Ponieważ każda ciąża jest inna, najbezpieczniej będzie skonsultować się ze swoją położną lub lekarzem.
+    </div>
+</div>
+```
+W blokach podmieniamy tylko treść pytania FAQ 2 znaczniku ``h3`` oraz treść odpowiedzi w znaczniku oznaczonym klasą ``"custom-faq-collapsabe-answer"``
 
 ### SEKCJA 10
 Analogicznie jak w przypadku poprzednich sekcji, aby sekcja była widoczna, należy:
@@ -486,17 +601,58 @@ Historie klientów
 ```
 Analogicznie jak w przypadku każdej innej takiej strony, edytujemy jedynie tekst pomiędzy znacznikami a następnie wklejamy za pomocą edytora HTML stron własnych w kod strony własnej.
 
+Tu również mamy powtarzalne bloki, które trzeba wypełnić odpowiednią treścią:
+```html
+<div class="column is-12 story">
+        <p class="story-content">
+            "Sama nie wierzyłam w działanie czarnuszki, myślałam że kolejny przereklamowany lek na wszystko. U mnie za każdym razem z wiosną przychodził koszmar związany z ciągłym swędzeniem oczu, katarem, non stop leki na alergię które praktycznie nie pomagały. Spróbowałam olej z czarnuszki nie wierząc w to, że pomoże, kiedy obudziłam się następnego dnia bez typowego swędzenia nie mogłam w to uwierzyć, myślałam że może to przypadek, odstawiłam olej, następnego dnia znowu ta alergia!!! Znowu łyżka oleju i następnego dnia brak objawów. Odstawiłam leki na alergie całkowicie."
+        </p>
+        <span class="story-author">@Natalya Malczyk</span>
+    </div>
+```
+w znaczniku oznaczonym klasą ``"story-content"`` wpisujemy treść historii klienta, natomiast w znaczniku oznaczonym klasą ``"story-author"`` wypełniamy nazwę autora historii.
+
+
 ### SEKCJA 11
 Sekcja ta jest galerią, aby dodać zdjęcia do tej galerii, należy:
 * Dodać zdjęcia do karty produktu
 * Nadać zdjęciom odpowiednie alty - ``bot-gallery``
 Sterować widocznością galerii możemy za pomocą tagu ``bot-gallery`` - jeśli produkt takiego tagu nie ma, galeria się nie wyświetli. 
+Ważne - aby galeria wyświetlała się dobrze, konieczne jest aby były w niej conajmniej dwa zdjęcia.
+
 
 ### SEKCJA 12
 
 Sekcja ta tworzy się 'sama' - jeśli istnieje ścieżka przejścia do produktu (z kategorii/kolekcji) to tu wyświetlą się produktu z kolekcji/kategorii z której przyszliśmy.
 
-    
+## OVERLAY NA LIŚCIE PRODUKTÓW
+Aby na liscie produktów po najechaniu pojawiała się lista, w **KRÓTKIM OPISIE PRODUKTU** należy wkleić następujący fragment kodu i wypełnić odpowiednimi informacjami:
+```html
+<div class="custom-product-hover">
+<ul>
+<li>Najczęściej wybierany przez rodziców</li>
+<li>Bomba składników bioaktywnych</li>
+<li>Naturalne wsparcie przy alergii</li>
+</ul>
+<a href="{$p->url}">zobacz</a>
+</div>
+```
+Zmieniamy tylko treść w znacznikach ``li``
+
+## DROPDOWN MENU W MENU GŁÓWNYM
+
+Aby z elementu menu wysunęło się menu rozwijane, w panelu należy:
+* Stworzyć dwie nawigacje nazwane odpowiednio:
+    ``tytułmenuzkjtóregomenumasięrozwijac_1`` oraz ``tytułmenuzkjtóregomenumasięrozwijac_1``
+    I umieścić w nich odpowiednie linki.
+    W każdej z dwóch nawigacji ostatni link będzie wyróżniony kolorem
+* Dodać do szablonu zdjęcie mające wyswietlać się w menu, zdjęcie powinno mieć odpowiednią nazwę - nazwaelementuwmenuglownymphoto i być w formacie png, przykładowo ``olejephoto.png``
+
+Aby dodać zdjęcie do szablonu, należy:
+* Przejść w panelu do zakłądki wygląd sklepu, otworzyć edytor HTML szablonu
+* W menu po lewej stronie wybrać "Pozostałe pliki" i na samym dole tej sekcji pojawi się "Dodaj plik", należy dodać plik w tym miejscu. 
+
+
     
 
 
