@@ -31,13 +31,16 @@ Aby zdjęcie wyświetlało się w odpowiedniej sekcji, to musi być ono:
 * dodane do karty produktu
 * posiadać odpowiedni alt
     * alt jest zależny od sekcji, w której zdjęcie ma się wyświetlać i powinien wyglądać następująco:
-        * ``desc_1_1`` dla zdjęcia przy sekcji 3
+        * ``desc_1_1`` dla pierwszego zdjęcia przy sekcji 3
+        * ``desc_1_2`` dla drugiego zdjęcia przy sekcji 3
         * ``desc_2_1`` dla  pierwszego zdjęcia przy sekcji 5
         * ``desc_2_2`` dla drugiego zdjęcia przy sekcji 5
         
 
-Aby w sekcji 3 wyświetlało się video, produkt również musi posiadać odpowiedni tag. Tag dot. video powinien wyglądać następująco: ``video_1_bX4Pf_5fpiA`` Gdzie ``video_1_`` jest częścią stałą dla każdego produktu, a pozostała część to fragment linku do video, czyli mając link https://www.youtube.com/watch?v=bX4Pf_5fpiA&t=8s
+Aby w sekcji 3 lub 5 wyświetlało się video, produkt również musi posiadać odpowiedni tag. Tag dot. video dla sekcji 3 powinien wyglądać następująco: ``video_1_bX4Pf_5fpiA`` Gdzie ``video_1_`` jest częścią stałą dla każdego produktu, a pozostała część to fragment linku do video, czyli mając link https://www.youtube.com/watch?v=bX4Pf_5fpiA&t=8s
 wycinamy ``bX4Pf_5fpiA`` i doklejamy na koncu taga.
+Analogicznie postepujemy z tagiem dla video w sekcji 5, z wyjątkiem, że musi on zawierac ``video_3``
+Drugie zdjęcie w każdej z sekcji może zostać zamienione na video z youtube. W tym celu dodajemy do produktu tag opisany wyżej - jeśli tag istnieje, wyświetlamy video - jeśli nie, wyświetlamy zdjęcie. 
 
 ### SEKCJA 2
 Aby sekcja była widoczna, konieczne jest dodanie do produktu tagu ``props`` oraz stworzenie odpowiedniej strony własnej w panelu sklepu. Strona musi nazywać się ``nazwa_produktu_props`` czyli przykładowo, dla produktu Olej lniany, stronę nazywamy ``olej_lniany_props``. Ważnym jest by w nazwie strony był dokładny tytuł produktu napisany małymi literami, ze spacjami zamienionymi na znak ``_``
