@@ -43,7 +43,7 @@ Analogicznie postepujemy z tagiem dla video w sekcji 5, z wyjątkiem, że musi o
 Drugie zdjęcie w każdej z sekcji może zostać zamienione na video z youtube. W tym celu dodajemy do produktu tag opisany wyżej - jeśli tag istnieje, wyświetlamy video - jeśli nie, wyświetlamy zdjęcie. 
 
 ### SEKCJA 2
-Aby sekcja była widoczna, konieczne jest dodanie do produktu tagu ``props`` oraz stworzenie odpowiedniej strony własnej w panelu sklepu. Strona musi nazywać się ``nazwa_produktu_props`` czyli przykładowo, dla produktu Olej lniany, stronę nazywamy ``olej_lniany_props``. Ważnym jest by w nazwie strony był dokładny tytuł produktu napisany małymi literami, ze spacjami zamienionymi na znak ``_``
+Aby sekcja była widoczna, konieczne jest dodanie do produktu tagu ``props`` oraz stworzenie odpowiedniej strony własnej w panelu sklepu. Strona musi nazywać się ``nazwa_produktu_props`` czyli przykładowo, dla produktu Olej lniany, stronę nazywamy ``olej_lniany_props``. Ważnym jest by w nazwie strony był dokładny tytuł produktu napisany małymi literami, ze spacjami zamienionymi na znak ``_``. Jeśli w nazwie produktu znajduje się znak myślnika ``-`` to w tym miejscu w nazwie strony wstawiamy znak ``_``, a znaki specjalne typu ``%`` pomijamy.
 
 Po utworzeniu strony, cokolwiek tam zostanie wpisane wyświetli się na karcie produktu. Aby jednak zachować układ zgodny z projektem, wypełniona musi zostać poniższa templatka:
 ```html
