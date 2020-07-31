@@ -41,6 +41,8 @@ Aby w sekcji 3 lub 5 wyświetlało się video, produkt również musi posiadać 
 wycinamy ``bX4Pf_5fpiA`` i doklejamy na koncu taga.
 Analogicznie postepujemy z tagiem dla video w sekcji 5, z wyjątkiem, że musi on zawierac ``video_3``
 Drugie zdjęcie w każdej z sekcji może zostać zamienione na video z youtube. W tym celu dodajemy do produktu tag opisany wyżej - jeśli tag istnieje, wyświetlamy video - jeśli nie, wyświetlamy zdjęcie. 
+Jeśli chcemy aby wyświietlało się jedno wysokie zdjęcie, to nie dodajemy drugiego zdjęcia z opisu sekcji.
+Jeśli chcemy by w sekcji nie było żadnego zdjęcia do produktu dodajemy tag ``desc-1-full`` dla pierwszej sekcji opisowej i analogicznie ``desc-2-full`` dla drugiej sekcji opisowej
 
 ### SEKCJA 2
 Aby sekcja była widoczna, konieczne jest dodanie do produktu tagu ``props`` oraz stworzenie odpowiedniej strony własnej w panelu sklepu. Strona musi nazywać się ``nazwa_produktu_props`` czyli przykładowo, dla produktu Olej lniany, stronę nazywamy ``olej_lniany_props``. Ważnym jest by w nazwie strony był dokładny tytuł produktu napisany małymi literami, ze spacjami zamienionymi na znak ``_``. Jeśli w nazwie produktu znajduje się znak myślnika ``-`` to w tym miejscu w nazwie strony wstawiamy znak ``_``, a znaki specjalne typu ``%`` pomijamy.
