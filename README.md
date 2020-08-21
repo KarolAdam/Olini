@@ -21,6 +21,7 @@ Aby karta produktu NIE ULEGLA ZMIANOM w aktywnym szablonie, należy:
 Treść w sekcjach 1, 3 i 5 edytujemy za pomocą edycji opisu produktu. Opis podzielony jest za pomocą klucza ``_divide`` - czyli tam, gdzie kończy się treść danej sekcji opisu a zaczyna następna wstawiamy słowo klucz ``_divide``, przykładowo:
 ![](https://i.imgur.com/U8sMBI6.png)
 
+Jeśli produkt nie jest olejem, należy dodać do niego tag ``not-oil`` - wtedy na karcie produktu nie pojawi się informacja o tym, że został wytłoczony, w jej miejsce pojawi się informacja o przygotowaniu. 
 
 
 Dodatkowo, aby pojawiła się sekcja 3 i/lub 5, konieczne jest aby produkt posiadał odpowiedni tag:
