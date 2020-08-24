@@ -673,7 +673,7 @@ Aby w menu wyświetlało się zdjęcie należy:
 * Przygotować zdjęcie w formacie .png o nazwie zawierającej w sobie tytuł linka z menu głównego z którego rozwijamy menu oraz _photo, przykładowo ``oleje_photo.png``
 * Wejść w zakładkję Wygląd Sklepu -> Edytor HTML
 * Dodać zdjęcie do zakładki POZOSTAŁE PLIKI jak na screenie poniżej lub w video tutaj [https://monosnap.com/file/qParYprLSMsNALk1wyftR0DwjY1g3K](https://monosnap.com/file/qParYprLSMsNALk1wyftR0DwjY1g3K)
-* Aby dodać link do zdjęcia, w dowolnej kolumnie z danej nawigacji powinien znajdować się link o nazwie photo i adresie, do którego celować ma zdjęcie. 
+* Aby dodać link do zdjęcia, w dowolnej kolumnie z danej nawigacji powinien znajdować się link o nazwie photo i adresie, do którego kierować ma zdjęcie. 
 
 
 
