@@ -300,7 +300,8 @@ Analogicznie jak w przypadku sekcji 4, aby sekcja była widoczna, należy:
 * stworzyć stronę o nazwie ``nazwa_produktu_why`` 
 * edytować templatkę i wkleić kod w kod strony własnej.
 
-```html <div class="columns why-wrapper">
+```html 
+<div class="columns why-wrapper">
 <h3 class="column is-8 is-offset-2 why-header">
 Dlaczego warto sięgnąć po olej z czarnuszki Olini?
 </h3>
