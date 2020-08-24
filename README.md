@@ -663,6 +663,7 @@ Aby z elementu menu wysunęło się menu rozwijane, w panelu należy:
     W każdej z dwóch nawigacji ostatni link będzie wyróżniony kolorem
 * Dodać do szablonu zdjęcie mające wyswietlać się w menu, zdjęcie powinno mieć odpowiednią nazwę - nazwaelementuwmenuglownymphoto i być w formacie png, przykładowo ``olejephoto.png``
 
+
 Aby dodać zdjęcie do szablonu, należy:
 * Przejść w panelu do zakłądki wygląd sklepu, otworzyć edytor HTML szablonu
 * W menu po lewej stronie wybrać "Pozostałe pliki" i na samym dole tej sekcji pojawi się "Dodaj plik", należy dodać plik w tym miejscu. 
@@ -671,7 +672,11 @@ Aby dodać zdjęcie do szablonu, należy:
 Aby w menu wyświetlało się zdjęcie należy:
 * Przygotować zdjęcie w formacie .png o nazwie zawierającej w sobie tytuł linka z menu głównego z którego rozwijamy menu oraz _photo, przykładowo ``oleje_photo.png``
 * Wejść w zakładkję Wygląd Sklepu -> Edytor HTML
-* Dodać zdjęcie do zakładki POZOSTAŁE PLIKI jak na screenie poniżej lub w video tutaj [https://monosnap.com/file/qParYprLSMsNALk1wyftR0DwjY1g3K](https://monosnap.com/file/qParYprLSMsNALk1wyftR0DwjY1g3K): 
+* Dodać zdjęcie do zakładki POZOSTAŁE PLIKI jak na screenie poniżej lub w video tutaj [https://monosnap.com/file/qParYprLSMsNALk1wyftR0DwjY1g3K](https://monosnap.com/file/qParYprLSMsNALk1wyftR0DwjY1g3K)
+* Aby dodać link do zdjęcia, w dowolnej kolumnie z danej nawigacji powinien znajdować się link o nazwie photo i adresie, do którego celować ma zdjęcie. 
+
+
+
 ![](https://i.imgur.com/IsScMrF.png)
 
 
