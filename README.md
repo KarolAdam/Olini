@@ -667,7 +667,11 @@ Aby dodać zdjęcie do szablonu, należy:
 * Przejść w panelu do zakłądki wygląd sklepu, otworzyć edytor HTML szablonu
 * W menu po lewej stronie wybrać "Pozostałe pliki" i na samym dole tej sekcji pojawi się "Dodaj plik", należy dodać plik w tym miejscu. 
 
-
-    
+### ZDJĘCIA W MENU
+Aby w menu wyświetlało się zdjęcie należy:
+* Przygotować zdjęcie w formacie .png o nazwie zawierającej w sobie tytuł linka z menu głównego z którego rozwijamy menu oraz _photo, przykładowo ``oleje_photo.png``
+* Wejść w zakładkję Wygląd Sklepu -> Edytor HTML
+* Dodać zdjęcie do zakładki POZOSTAŁE PLIKI jak na screenie poniżej:
+    !(https://i.imgur.com/IsScMrF.png)
 
 
