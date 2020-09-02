@@ -679,4 +679,6 @@ Aby w menu wyświetlało się zdjęcie należy:
 
 ![](https://i.imgur.com/IsScMrF.png)
 
+### ZMIANA CZASU DOSTAWY
 
+Zmiany czasu dostawy dokonujemy w tłumaczeniach. Aby dostać się do tłumaczeń, przechodzimy do zakłądki wygląd sklepu, następnie przy szablonie klikamy przycisk z trzema kropkami. Po kliknięciu, wybieramy tłumaczenia. Na liście która nam się otworzy szukamy odpowiedniego pola, zmieniamy treść i gotowe. 
