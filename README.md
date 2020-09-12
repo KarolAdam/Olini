@@ -419,7 +419,7 @@ Analogicznie jak w przypadku sekcji 4, aby sekcja była widoczna, należy:
 </div>
 <div class="columns experts-wrapper">
 	<div class="column is-narrow-desktop is-narrow-tablet  is-12-mobile is-paddingless">
-		<figure><img src="//cdn.shoplo.com/3585/files/pantabletka.png" ></figure>
+		<figure><a href="http://pantabletka.pl"><img src="//cdn.shoplo.com/3585/files/pantabletka.png" ></a></figure>
 	</div>
 	<div class="column expert-review-wrapper">
 <div class="expert-triangle"></div>
@@ -644,13 +644,11 @@ Sekcja ta tworzy się 'sama' - jeśli istnieje ścieżka przejścia do produktu 
 ## OVERLAY NA LIŚCIE PRODUKTÓW
 Aby na liscie produktów po najechaniu pojawiała się lista, w **KRÓTKIM OPISIE PRODUKTU** należy wkleić następujący fragment kodu i wypełnić odpowiednimi informacjami:
 ```html
-<div class="custom-product-hover">
 <ul>
 <li>Najczęściej wybierany przez rodziców</li>
 <li>Bomba składników bioaktywnych</li>
 <li>Naturalne wsparcie przy alergii</li>
 </ul>
-<a href="{$p->url}">zobacz</a></div>
 ```
 Zmieniamy tylko treść w znacznikach ``li``
 
