@@ -1,4 +1,5 @@
 # Artykuł
+Aby template działał, artykuł musi mieć TAG ``new-article``
 
 ## Pierwsza sekcja z krótkim opisem
 ```html
